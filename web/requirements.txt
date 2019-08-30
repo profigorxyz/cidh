@@ -1,4 +1,12 @@
-Django>=2.2.0,<2.3.0
-gunicorn>=19.9.0,<19.10.0
-psycopg2>=2.7.0,<2.8.0
-redis>=3.2.0,<3.3.0
+Django==2.1.11
+django-classy-tags==0.9.0
+django-cms==3.6.0
+django-formtools==2.1
+django-sekizai==1.0.0
+django-treebeard==4.3
+djangocms-admin-style==1.4.0
+gunicorn==19.9.0
+pkg-resources==0.0.0
+psycopg2-binary==2.8.3
+pytz==2019.2
+redis==3.3.8
