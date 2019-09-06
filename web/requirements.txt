@@ -6,7 +6,6 @@ django-sekizai==1.0.0
 django-treebeard==4.3
 djangocms-admin-style==1.4.0
 gunicorn==19.9.0
-pkg-resources==0.0.0
-psycopg2-binary==2.8.3
+psycopg2==2.7.7
 pytz==2019.2
 redis==3.3.8

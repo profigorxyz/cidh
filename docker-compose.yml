@@ -12,10 +12,11 @@ services:
     volumes:
       - web-django:/usr/src/app
       - web-static:/usr/src/app/static
+      - web-media:/usr/src/app/media
     env_file: .env
     environment:
       DEBUG: 'true'
-    command: sh -c "gunicorn docker_django.wsgi:application -w 2 -b :8000"
+    command: sh -c "gunicorn infantinho.wsgi:application -w 2 -b :8000"
 
   nginx:
     restart: always
@@ -24,6 +25,7 @@ services:
       - "80:80"
     volumes:
       - web-static:/www/static
+      - web-media:/www/media
     links:
       - web:web
 
@@ -47,5 +49,6 @@ services:
 volumes:
   web-django:
   web-static:
+  web-media:
   pgdata:
   redisdata:
